@@ -57,7 +57,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: 'Belgrano', serif;
+    font-family: 'Roboto Slab', serif;
     line-height: 1.4em;
     color: #222222;
     margin: 10px 0;
@@ -459,7 +459,7 @@ Tabs ===============*/
 }
 
 .nav-tabs > li > a {
-    font-family: 'Belgrano', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 2.2rem;
     color: #bbbac0;
     padding: 1rem 4rem;
@@ -704,7 +704,7 @@ Pricing Tables =====*/
 }
 
 .table-price {
-    font-family: 'Belgrano', serif;
+    font-family: 'Roboto Slab', serif;
     color: #ffffff;
     font-size: 2.6rem;
 }
@@ -952,7 +952,7 @@ span.flip-clock-label {
 @media all and (max-width: 768px) {
 
     #countdown-container {
-        /*display: none;*/
+        display: none;
     }
 }
 
@@ -966,6 +966,16 @@ span.flip-clock-label {
 
 .btn-danger {
     background-color: #ff1643;
+    height: 6rem;
+    font-size: 2.5rem;
+    color: #FFF;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
 }
 
 .btn-danger:hover {
@@ -974,4 +984,9 @@ span.flip-clock-label {
 
 .logo-container img {
     max-height: 70px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
 }

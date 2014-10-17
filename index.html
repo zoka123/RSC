@@ -5,12 +5,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:title"
+          content="Ready, Steady, Code! - Studentsko natjecanje" />
+    <meta property="og:site_name" content="Ready, Steady, Code!" />
+    <meta property="og:url"
+          content="http://rsc.foi.hr" />
+    <meta property="og:description" content="Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja
+        programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem
+        nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske
+        zajednice." />
+    <meta property="og:image"
+          content="http://rsc.foi.hr/images/FB/fb_profile.png" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!--== CSS Files ==-->
-    <!--<link href="css/bootstrap.css" rel="stylesheet" media="screen">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/animate.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" rel="stylesheet" media="screen">
@@ -23,7 +35,9 @@
     <!--== Google Fonts ==-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext,latin' rel='stylesheet'
           type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Belgrano&subset=latin-ext,latin' rel='stylesheet'
+    <!--<link href='http://fonts.googleapis.com/css?family=Belgrano&subset=latin-ext,latin' rel='stylesheet'
+          type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext' rel='stylesheet'
           type='text/css'>
 
 
@@ -34,32 +48,34 @@
         <div class="container box">
             <div class="row">
                 <nav role="navigation" class="col-sm-12">
-                    <div class="navbar-header col-md-4">
-                        <div class="logo-container">
+                    <div class="navbar-header col-md-3">
+                        <div class="col-md-12 col-xs-9 logo-container nopadding">
                             <img src="images/title_rsc.png" class="img-responsive" />
                         </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                        <div class="col-xs-3 nopadding">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="navbar-collapse collapse pull-right col-md-8">
-                        <!--== Navigation Menu ==-->
-                        <ul class="nav navbar-nav">
-                            <li class="current"><a href="#header">Početna</a></li>
-                            <li><a href="#schedule">O natjecanju</a></li>
-                            <li><a href="#prizes">Nagrade</a></li>
-                            <li><a href="#register">Prijava</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#partners">Partneri</a></li>
-                            <li><a href="#contact">Kontakt</a></li>
-                            <!--<li><a href="#subscribe">Newsletter</a></li>-->
-
-                        </ul>
-
+                    <div class="col-xs-12 col-md-9">
+                        <div class="navbar-collapse collapse pull-right col-xs-12">
+                            <!--== Navigation Menu ==-->
+                            <ul class="nav navbar-nav">
+                                <li class="current"><a href="#header">Početna</a></li>
+                                <li><a href="#schedule">O natjecanju</a></li>
+                                <li><a href="#prizes">Nagrade</a></li>
+                                <li><a href="#register">Prijava</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#partners">Partneri</a></li>
+                                <li><a href="#contact">Kontakt</a></li>
+                                <!--<li><a href="#subscribe">Newsletter</a></li>-->
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -68,7 +84,7 @@
 
     <!--== Site Description ==-->
     <div class="header-cta">
-        <div class="container">
+        <!--<div class="container">
 
             <div class="row">
                 <div class="blk">
@@ -80,7 +96,7 @@
                     <input type="submit" value="Prijava tima" name="submit" id="goregister">
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 
     <div class="header-bg">
@@ -109,13 +125,13 @@
 <section id="schedule" class="clearfix row">
 
     <div class="clearfix text-center">
-        <h3 class="">Još samo</h3>
-        <br />
-
         <div id="countdown-container">
+            <h3 class="">Još samo</h3>
+            <br />
+
             <div class="your-clock"></div>
+            <h3 class="">do kraja prijava</h3>
         </div>
-        <h3 class="">do kraja prijava</h3>
     </div>
 
     <hr>
@@ -167,7 +183,10 @@
 <div class="col-md-12 col-sm-12">
     <h2>O natjecanju</h2>
 
-    <p>Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske zajednice.</p>
+    <p>Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja
+        programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem
+        nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske
+        zajednice.</p>
 </div>
 <div class="col-md-12 col-sm-12">
     <div class="content-tabs">
@@ -323,7 +342,6 @@
 </div>
 
 
-</section>
 <!--==========-->
 
 
@@ -514,7 +532,7 @@
 
             <div class="table-price">6.000,00 KN</div>
             <ul class="table-features">
-                <li class="icon fa fa-trophy"><span>Seat</span></li>
+                <li class="icon fa fa-trophy"></li>
 
             </ul>
         </div>
@@ -525,7 +543,7 @@
 
             <div class="table-price">10.000,00 KN</div>
             <ul class="table-features">
-                <li class="icon fa fa-trophy"><span>Seat</span></li>
+                <li class="icon fa fa-trophy"></li>
             </ul>
         </div>
     </div>
@@ -533,9 +551,9 @@
         <div class="pricing-table">
             <h3 class="table-title">Treće mjesto</h3>
 
-            <div class="table-price">2.500,00 KN</div>
+            <div class="table-price">4.000,00 KN</div>
             <ul class="table-features">
-                <li class="icon fa fa-trophy"><span>Seat</span></li>
+                <li class="icon fa fa-trophy"></li>
 
             </ul>
         </div>
@@ -622,172 +640,217 @@
 <!--== FAQ ========================-->
 <!--===============================-->
 <section id="faq" class="row">
-    <div class="col-sm-12">
-        <div class="section-header text-center">
-            <h2>F.A.Q</h2>
-            <h4>Awesome section description goes here.</h4>
-        </div>
+<div class="col-sm-12">
+    <div class="section-header text-center">
+        <h2>F.A.Q</h2>
+        <h4>Awesome section description goes here.</h4>
     </div>
-    <div class="col-sm-6">
-        <ul class="accordion-group">
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Tko može sudjelovati?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+</div>
+<div class="col-sm-6">
+    <ul class="accordion-group">
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Tema je zadana ili sami razvijamo svoju ideju?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Svi sudionici moraju biti studenti ili srednjoškolci te u svakom trenutku moraju moći dokazati
-                    studentski/srednjoškolski status
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Tko ne može sudjelovati?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Tema zadatka biti će zadana na početku natjecanja.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Koliko članova može imati tim?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Organizatori i studenti zaposleni u Assecu ne mogu se natjecati
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Kako funkcionira formiranje tima?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Najviše 4.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Koje tehnologije su dozvoljene?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Timovi će se sastojati od max 4 osobe koje su se prijavile kao tim ili 4 osobe koje su organizatori
-                    udružili u tim.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Postoje li asistenti na natjecanju?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Natjecatelji sami odabiru tehnologiju razvoja.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Trebamo li osigurati vlastita računala?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Svaki će tim imati dodijeljenog "asistenta" koji će nadzirati i mentorirati svoj tim. Asistent je, u
-                    pravilu, zaposlenik Asseco firme.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Mi smo programeri, treba li nam dizajner?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Najbolje bi bilo da svaki natjecatelj radi na svom računalu/laptopu. Po potrebi ćemo osigurati
+                računalo za one koji nisu u mogućnosti donijeti i koristiti vlastito. Molimo kontaktirajte
+                Organizatore prije.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Imate li monitor, tipkovnicu ili miša viška?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Osim asistenata timova, postojat će i asistenti za dizajn koji će pomagati svim timovima.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Koliko traje natjecanje?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Da :)
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Možemo li dobiti server za razvoj aplikacija</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Realizacija rješenja trajat će 24 sata prema službenom rasporedu
-                </div>
-            </li>
+            <div class="accordion-body">
+                Registracijom na https://education.github.com/pack ostvarujete besplatnih 100$ za cloud na Digital
+                Ocean.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Što ako nemamo tim?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
+            <div class="accordion-body">
+                Samostalni natjecatelji raspoređuju se u timove.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Je li dozvoljeno koristiti open source rješenja/librarye?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Zaboravio sam dodati gumb u aplikaciji nakon isteka vremena!</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Da.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Tko polaže pravo na realiziranu aplikaciju nakon natjecanja?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Nakon isteka vremena za predaju natjecatelji ne smiju dorađivati rješenje niti prezentaciju.
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="col-sm-6">
-        <ul class="accordion-group">
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Pravila razvoja</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Nitko, jer je uvijet da rješenje bude javno objavljeno (Open source), vidi pravila.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Moraju li svi članovi tima biti studenti/srednjoškolci?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Sudionici ne smiju koristiti postojeći kod, kopirati kodove iz drugih aplikacija ili izvora. Smiju
-                    koristiti open source biblioteke kao pomoćnu funkcionalnost, ali one ne smiju biti glavni dio
-                    njihovog rješenja.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Kako funkcionira glasanje?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Da.
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="col-sm-6">
+    <ul class="accordion-group">
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Je li dozvoljena pomoć kolega koji nisu sudionici natjecanja (Skype i
+                    sl.)?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Glas publike računat će se kao sedmi glas, uz šest glasova članova žirija.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Intelektualno vlasništvo</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Ne, ali moguće je postaviti otvoreno javno pitanje na neki od foruma (Stackoverflow i sl.).
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Što ako ne stignemo implementirati rješenje do kraja?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Nepoštivanje zakona, intelektualnog vlasništva, pravila natjecanja i bilo kakav pokušaj varanja te
-                    korištenja nedozvoljenih resursa će rezultirati diskvalifikacijom čitavog tima.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Do kada traju prijave?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Prezentira se samo dio rješenja koje je napravljeno u zadanom roku.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Na koji se način kontrolira predaja rješenja u roku?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Prijava timova završava 11.11.2014 u 23:59. Naknadne izmjene nisu dozvoljene.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Kada počinje natjecanje?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                U obzir se uzima zadnji commit na git repozitoriju napravljen prije konačnog roka na predaju.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Koliko vremena imamo za prezentaciju</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Natjecanje počinje 22.11.2014. u 9:00. Timovi moraju biti prisutni najkasnije sat vremena prije
-                    početka natjecanja
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Kako će moji podaci biti korišteni?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                10 min + vrijeme za pitanja žirija i publike.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Što se prezentira?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Sudjelovanjem na natjecanju sudionici pristaju na korištenje osobnih podataka, fotografija i
-                    videomaterijala u promotivne svrhe u svim medijima bez naknade. Time podržavaju kvalitetu samog
-                    događanja i daljnju promociju.
-                </div>
-            </li>
-            <li class="accordion">
-                <a class="accordion-heading">
-                    <h4 class="accordion-title">Matija je Danku sakrio miš, što da radim?</h4>
-                    <span class="fa fa-plus-circle pull-right"></span>
-                </a>
+            <div class="accordion-body">
+                Prezentirate svoje rješenje, a najvažnije je istaknuti razlog po kojemu je upravo vaše rješenje bolje od
+                ostalih. Naglasak je na tehnologijama, workflowu, kvaliteti izvedbe,...
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Tko se sve može prijaviti?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
 
-                <div class="accordion-body">
-                    Organizatori natjecanja ne odgovaraju za radnje natjecatelja. Svaki natjecatelj snosi odgovornost za
-                    svoje postupke tijekom natjecanja.
-                </div>
-            </li>
-        </ul>
-    </div>
+            <div class="accordion-body">
+                Svi koji se školuju u hrvatskim fakultetima ili školama.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Hoću li imati pristup internetu?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
+
+            <div class="accordion-body">
+                Da.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Koji zadatak očekujemo? </h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
+
+            <div class="accordion-body">
+                Zadatak trenutno nije javan kako bi izbjegli mogućnost pripreme unaprijed. No možemo reći da rješenje
+                koje tražimo ima humanitaran i plemeniti karakter.
+            </div>
+        </li>
+        <li class="accordion">
+            <a class="accordion-heading">
+                <h4 class="accordion-title">Što ako se prijavi više od 10 timova?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+            </a>
+
+            <div class="accordion-body">
+                U slučaju velikog broja prijava, odabrat će se samo 10 timova koji će dobiti poziv na natjecanje, a
+                timovi će se rangirati prema opisu koji su naveli pri prijavi.
+            </div>
+        </li>
+    </ul>
+</div>
 </section>
 <!--==========-->
 
@@ -888,7 +951,7 @@
                 <div class="col-sm-8">
 
                     <!--== Social Icons ==-->
-                    <ul class="social-icons">
+                    <!--<ul class="social-icons">
                         <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-twitter"></a></li>
                         <li><a href="#" class="fa fa-google-plus"></a></li>
@@ -896,7 +959,14 @@
                         <li><a href="#" class="fa fa-instagram"></a></li>
                         <li><a href="#" class="fa fa-pinterest"></a></li>
                         <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
+                    </ul>-->
+
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                    <span class='st_googleplus_large' displayText='Google +'></span>
+                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                    <span class='st_fblike_large' displayText='Facebook Like'></span>
 
                 </div>
                 <div class="col-sm-4 text-right">
@@ -930,8 +1000,8 @@
 <!--== Javascript Files ==-->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/jquery-2.1.0.min.js"></script>
-<!--<script src="js/bootstrap.min.js"></script>-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/jquery.nav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
@@ -961,7 +1031,9 @@
         });
 
     }
-
 </script>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "a0306274-96c0-4229-96a1-ca08df253602", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </body>
 </html>
