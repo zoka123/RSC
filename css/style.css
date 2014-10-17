@@ -944,7 +944,7 @@ Copyrights =========*/
 }
 
 span.flip-clock-label {
-    color: #FFF !important;
+    color: #ff1643 !important;
     font-weight: bold;
     font-size: 16px;
 }
@@ -952,10 +952,26 @@ span.flip-clock-label {
 @media all and (max-width: 768px) {
 
     #countdown-container {
-        display: none;
+        /*display: none;*/
     }
 }
 
 .text-white {
-    color:#FFF!important;
+    color: #FFF !important;
+}
+
+.content {
+    background: #E7E7E7;
+}
+
+.btn-danger {
+    background-color: #ff1643;
+}
+
+.btn-danger:hover {
+    background-color: #E61039;
+}
+
+.logo-container img {
+    max-height: 70px;
 }

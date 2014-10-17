@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <title>RSC</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!--== CSS Files ==-->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!--<link href="css/bootstrap.css" rel="stylesheet" media="screen">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/animate.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" rel="stylesheet" media="screen">
@@ -33,7 +34,10 @@
         <div class="container box">
             <div class="row">
                 <nav role="navigation" class="col-sm-12">
-                    <div class="navbar-header">
+                    <div class="navbar-header col-md-4">
+                        <div class="logo-container">
+                            <img src="images/title_rsc.png" class="img-responsive" />
+                        </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                                 data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -41,23 +45,17 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-
-                        <!--== Logo ==-->
-								<span class="navbar-brand logo">
-								RSC 1.0
-								</span>
-
                     </div>
-                    <div class="navbar-collapse collapse">
-
+                    <div class="navbar-collapse collapse pull-right col-md-8">
                         <!--== Navigation Menu ==-->
                         <ul class="nav navbar-nav">
                             <li class="current"><a href="#header">Početna</a></li>
-                            <li><a href="#schedule">O natjecanu</a></li>
+                            <li><a href="#schedule">O natjecanju</a></li>
                             <li><a href="#prizes">Nagrade</a></li>
                             <li><a href="#register">Prijava</a></li>
                             <li><a href="#faq">FAQ</a></li>
                             <li><a href="#partners">Partneri</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
                             <!--<li><a href="#subscribe">Newsletter</a></li>-->
 
                         </ul>
@@ -71,24 +69,17 @@
     <!--== Site Description ==-->
     <div class="header-cta">
         <div class="container">
-            <div class="row clearfix text-center">
-                <div id="countdown-container">
-                    <div class="your-clock"></div>
-                </div>
-                <h3 class="text-white">... do kraja prijava</h3>
-            </div>
-            <!--
+
             <div class="row">
                 <div class="blk">
-                    <h1>Ready, steady,<br/>code 1.0</h1>
+                    <h1>Ready, steady,<br />code 1.0</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="blk">
-                    <input type="submit" value="Registracija" name="submit" id="goregister">
+                    <input type="submit" value="Prijava tima" name="submit" id="goregister">
                 </div>
             </div>
-            -->
         </div>
     </div>
 
@@ -100,8 +91,8 @@
 
             <!--== Main Slider ==-->
             <ul class="slides">
-                <li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>
-                <li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>
+                <li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image" /></li>
+                <li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2" /></li>
             </ul>
 
         </div>
@@ -115,7 +106,19 @@
 <!--===============================-->
 <!--== Features ===================-->
 <!--===============================-->
-<section id="schedule" class="row">
+<section id="schedule" class="clearfix row">
+
+    <div class="clearfix text-center">
+        <h3 class="">Još samo</h3>
+        <br />
+
+        <div id="countdown-container">
+            <div class="your-clock"></div>
+        </div>
+        <h3 class="">do kraja prijava</h3>
+    </div>
+
+    <hr>
 
     <div class="col-md-3 col-xs-6">
         <div class="event-info">
@@ -130,7 +133,7 @@
         <div class="event-info">
             <div class="icon fa fa-calendar"></div>
             <div class="info">
-                <h3>22. i 23. Studeni</h3>
+                <h3>22. i 23. studeni</h3>
                 <span>+ After party</span>
             </div>
         </div>
@@ -139,21 +142,21 @@
         <div class="event-info">
             <div class="icon fa fa-users"></div>
             <div class="info">
-                <h3>10 Timova</h3>
+                <h3>10 timova</h3>
                 <span>po 4 člana</span>
             </div>
         </div>
     </div>
     <div class="col-md-3 col-xs-6">
         <div class="event-info">
-            <div class="icon fa fa-trophy"></div>
+            <div class="icon fa fa-code"></div>
             <div class="info">
                 <h3>24 sata</h3>
                 <span>Čistog programiranja</span>
             </div>
         </div>
     </div>
-<!--</section>-->
+</section>
 <!--==========-->
 
 
@@ -161,170 +164,163 @@
 <!--== Schedule ===================-->
 <!--===============================-->
 <!--<section id="schedule" class="row">-->
-    <div class="col-md-12 col-sm-12">
-        <h2>O natjecanju</h2>
+<div class="col-md-12 col-sm-12">
+    <h2>O natjecanju</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, error, et. Cupiditate, necessitatibus,
-            ab, nemo commodi quod unde facere doloribus voluptatibus recusandae quibusdam molestiae excepturi corrupti
-            quae! Dolor, deserunt, consequuntur.</p>
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>Vero, deleniti, provident beatae illo accusantium</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <p>Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske zajednice.</p>
+</div>
+<div class="col-md-12 col-sm-12">
+    <div class="content-tabs">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Prijave</a></li>
+            <li><a href="#tab2" data-toggle="tab">Natjecanje</a></li>
         </ul>
-    </div>
-    <div class="col-md-12 col-sm-12">
-        <div class="content-tabs">
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Prijave</a></li>
-                <li><a href="#tab2" data-toggle="tab">Natjecanje</a></li>
-            </ul>
 
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                    <ul class="accordion-group">
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>17.10.2014</time>
-                                <h4 class="accordion-title">Početak prijava</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <ul class="accordion-group">
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>17.10.2014</time>
+                            <h4 class="accordion-title">Početak prijava</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Prijavite svoj tim putem obrasca na stranici.
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>11.11.2014</time>
-                                <h4 class="accordion-title">Kraj prijava</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            Prijavite svoj tim putem obrasca na stranici.
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>11.11.2014</time>
+                            <h4 class="accordion-title">Kraj prijava</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                U obzir se uzimaju prijave predane do 11.11.2014 u 23.59
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>15.11.2014</time>
-                                <h4 class="accordion-title">Obavijest primljenim timovima</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            U obzir se uzimaju prijave predane do 11.11.2014 u 23.59
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>15.11.2014</time>
+                            <h4 class="accordion-title">Obavijest primljenim timovima</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Timovi koji su odabrani za natjecanje dobiti će detaljne informacije na mail.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="accordion-body">
+                            Timovi koji su odabrani za natjecanje dobiti će detaljne informacije na mail.
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="tab-pane" id="tab2">
-                    <ul class="accordion-group">
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>08:00</time>
-                                <h4 class="accordion-title">Registracija timova</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+            <div class="tab-pane" id="tab2">
+                <ul class="accordion-group">
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>08:00</time>
+                            <h4 class="accordion-title">Registracija timova</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Na informacijskom pultu timovi će dobiti informacije o tijeku natjecanja te će ih
-                                osoblje uputiti u dvorane.
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>09:00</time>
-                                <h4 class="accordion-title">Otvaranje natjecanja</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            Na informacijskom pultu timovi će dobiti informacije o tijeku natjecanja te će ih
+                            osoblje uputiti u dvorane.
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>09:00</time>
+                            <h4 class="accordion-title">Otvaranje natjecanja</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Prezentacija pravila, projektnog zadatka te predstavljanje članova žirija
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>14:00</time>
-                                <h4 class="accordion-title">Ručak</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            Prezentacija pravila, projektnog zadatka te predstavljanje članova žirija
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>14:00</time>
+                            <h4 class="accordion-title">Ručak</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>19:00</time>
-                                <h4 class="accordion-title">Večera</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>19:00</time>
+                            <h4 class="accordion-title">Večera</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>06:00</time>
-                                <h4 class="accordion-title">Doručak</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>06:00</time>
+                            <h4 class="accordion-title">Doručak</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>10:00</time>
-                                <h4 class="accordion-title">Kraj - predaja rješenja i prezentacija</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>10:00</time>
+                            <h4 class="accordion-title">Kraj - predaja rješenja i prezentacija</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Rješenja se predaju na Git repozitorij (Bitbucket), a u obzir se uzima zadnji commit
-                                napravljen prije isteka vremena.
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>11:00</time>
-                                <h4 class="accordion-title">Odmor</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            Rješenja se predaju na Git repozitorij (Bitbucket), a u obzir se uzima zadnji commit
+                            napravljen prije isteka vremena.
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>11:00</time>
+                            <h4 class="accordion-title">Odmor</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Natjecatelji odmaraju prije prezentacije rješenja.
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>18:00</time>
-                                <h4 class="accordion-title">Prezentacije rjesenja i proglašenje pobjednika </h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            Natjecatelji odmaraju prije prezentacije rješenja.
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>18:00</time>
+                            <h4 class="accordion-title">Prezentacije rjesenja i proglašenje pobjednika </h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Svi timovi prezentiraju svoje rješenje, nakon čega slijedi glasanje i proglašenje
-                                pobjednika
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <time>21:00</time>
-                                <h4 class="accordion-title">After party</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
+                        <div class="accordion-body">
+                            Svi timovi prezentiraju svoje rješenje, nakon čega slijedi glasanje i proglašenje
+                            pobjednika
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <a class="accordion-heading">
+                            <time>21:00</time>
+                            <h4 class="accordion-title">After party</h4>
+                            <span class="fa fa-plus-circle pull-right"></span>
+                        </a>
 
-                            <div class="accordion-body">
-                                Svi sudionici pozvani su na after party.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="accordion-body">
+                            Svi sudionici pozvani su na after party.
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 
 
 </section>
@@ -587,7 +583,7 @@
     </div>
     <div class="col-sm-12 text-center">
         <h4>Voditelji timova prijavljuju tim kroz obrazac. Nakon toga na email će stići link na koji se trebaju
-            registrirati svi članovi tima. <br/>Molimo unesite sva polja.</h4>
+            registrirati svi članovi tima. <br />Molimo unesite sva polja.</h4>
     </div>
 </section>
 <!--==========-->
@@ -827,6 +823,43 @@
             </div>
 
         </div>
+    </div>
+</section>
+
+<!--==========-->
+
+
+<!--===============================-->
+<!--== Contact ===================-->
+<!--===============================-->
+
+<section id="contact" class="row">
+    <div class="col-sm-12">
+
+        <div class="col-sm-12">
+            <div class="section-header text-center">
+                <h2>Kontakt</h2>
+
+                <form id="contact-form" method="post" class="form">
+                    <div class="col-md-6">
+                        <input name="name" id="contact-name" type="text" placeholder="Ime i prezime" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input name="email" id="contact-email" type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <textarea required class="form-control" name="contact-text"></textarea>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <input type="submit" value="Pošalji" name="submit">
+                    </div>
+                    <p class="form-notification" style="display: none;">Upit je poslan</p>
+                </form>
+
+            </div>
+        </div>
+    </div>
 </section>
 
 <!--==========-->
@@ -840,6 +873,17 @@
     <div class="footer">
         <div class="container box">
 
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <br>
+
+                    <p>
+                        Prijavom na RSC natjecanje potvrđujete da se slažete s pravilima natjecanja.
+                    </p>
+                    <a href="http://rsc.foi.hr/pravila.pdf" target="_blank" class="btn btn-lg btn-danger">Pravila
+                        natjecanja</a>
+                </div>
+            </div>
             <section id="info" class="row">
                 <div class="col-sm-8">
 
@@ -866,10 +910,28 @@
     </div>
 </footer>
 
+<!--
+<div class="modal fade" id="rules" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Zatvori</span></button>
+                <h4 class="modal-title" id="myModalLabel">Pravila</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
 <!--== Javascript Files ==-->
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/jquery-2.1.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/jquery.nav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
@@ -885,7 +947,7 @@
 <script>
 
     var now = new Date(); // 9:00 AM
-    now.setTime( now.getTime() - now.getTimezoneOffset()*30*1000 );
+    now.setTime(now.getTime() - now.getTimezoneOffset() * 30 * 1000);
 
     var end = new Date("Nov 11, 2014 23:59:59 GMT+01:00");
 
@@ -901,6 +963,5 @@
     }
 
 </script>
-
 </body>
 </html>
