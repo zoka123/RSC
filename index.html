@@ -16,11 +16,14 @@
     <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
     <link href="css/flexslider.css" rel="stylesheet" media="screen">
     <link href="css/fancySelect.css" rel="stylesheet" media="screen">
+    <link href="css/flipclock.css" rel="stylesheet" media="screen">
     <link href="css/responsive.css" rel="stylesheet" media="screen">
 
     <!--== Google Fonts ==-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext,latin' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Belgrano&subset=latin-ext,latin' rel='stylesheet'
+          type='text/css'>
 
 
 </head>
@@ -68,6 +71,13 @@
     <!--== Site Description ==-->
     <div class="header-cta">
         <div class="container">
+            <div class="row clearfix text-center">
+                <div id="countdown-container">
+                    <div class="your-clock"></div>
+                </div>
+                <h3 class="text-white">... do kraja prijava</h3>
+            </div>
+            <!--
             <div class="row">
                 <div class="blk">
                     <h1>Ready, steady,<br/>code 1.0</h1>
@@ -78,6 +88,7 @@
                     <input type="submit" value="Registracija" name="submit" id="goregister">
                 </div>
             </div>
+            -->
         </div>
     </div>
 
@@ -105,6 +116,7 @@
 <!--== Features ===================-->
 <!--===============================-->
 <section id="features" class="row">
+
     <div class="col-md-3 col-xs-6">
         <div class="event-info">
             <div class="icon fa fa-map-marker"></div>
@@ -217,7 +229,8 @@
                             </a>
 
                             <div class="accordion-body">
-                                Na informacijskom pultu timovi će dobiti informacije o tijeku natjecanja te će ih osoblje uputiti u dvorane.
+                                Na informacijskom pultu timovi će dobiti informacije o tijeku natjecanja te će ih
+                                osoblje uputiti u dvorane.
                             </div>
                         </li>
                         <li class="accordion">
@@ -269,7 +282,8 @@
                             </a>
 
                             <div class="accordion-body">
-                                Rješenja se predaju na Git repozitorij (Bitbucket), a u obzir se uzima zadnji commit napravljen prije isteka vremena.
+                                Rješenja se predaju na Git repozitorij (Bitbucket), a u obzir se uzima zadnji commit
+                                napravljen prije isteka vremena.
                             </div>
                         </li>
                         <li class="accordion">
@@ -291,7 +305,8 @@
                             </a>
 
                             <div class="accordion-body">
-                                Svi timovi prezentiraju svoje rješenje, nakon čega slijedi glasanje i proglašenje pobjednika
+                                Svi timovi prezentiraju svoje rješenje, nakon čega slijedi glasanje i proglašenje
+                                pobjednika
                             </div>
                         </li>
                         <li class="accordion">
@@ -481,44 +496,6 @@
 <!--==========-->
 
 
-
-<!--===============================-->
-<!--== Carousel ===================-->
-<!--===============================-->
-
-<section id="partners" class="row">
-    <div class="col-sm-12">
-
-        <div class="col-sm-12">
-            <div class="col-sm-6">
-                <div class="section-header text-center">
-                    <h2>Organizatori</h2>
-                    <h4>Awesome section description goes here.</h4>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="section-header text-center">
-                    <h2>Partneri</h2>
-                    <h4>Awesome section description goes here.</h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12">
-            <div id="carousel" class="owl-carousel">
-                <div class="item"><img src="images/demo/partners/logo-01.png" alt="Logo 1"></div>
-                <div class="item"><img src="images/demo/partners/logo-02.png" alt="Logo 2"></div>
-                <div class="item"><img src="images/demo/partners/logo-03.png" alt="Logo 1"></div>
-                <div class="item"><img src="images/demo/partners/logo-04.png" alt="Logo 2"></div>
-
-            </div>
-
-        </div>
-</section>
-
-
-<!--==========-->
-
-
 <!--===============================-->
 <!--== Pricing Tables =============-->
 <!--===============================-->
@@ -579,6 +556,7 @@
     <div class="col-sm-12">
         <div class="section-header text-center">
             <h2>Prijava</h2>
+
             <p>
                 Prijavi svoj tim na RSC!
             </p>
@@ -642,7 +620,6 @@
     </div>
 </section>
 <!--==========-->
-
 
 
 <!--===============================-->
@@ -819,6 +796,40 @@
 <!--==========-->
 
 
+<!--===============================-->
+<!--== Carousel ===================-->
+<!--===============================-->
+
+<section id="partners" class="row">
+    <div class="col-sm-12">
+
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="section-header text-center">
+                    <h2>Organizatori</h2>
+                    <h4>Awesome section description goes here.</h4>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="section-header text-center">
+                    <h2>Partneri</h2>
+                    <h4>Awesome section description goes here.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div id="carousel" class="owl-carousel">
+                <div class="item"><img src="images/demo/partners/logo-01.png" alt="Logo 1"></div>
+                <div class="item"><img src="images/demo/partners/logo-02.png" alt="Logo 2"></div>
+                <div class="item"><img src="images/demo/partners/logo-03.png" alt="Logo 1"></div>
+                <div class="item"><img src="images/demo/partners/logo-04.png" alt="Logo 2"></div>
+
+            </div>
+
+        </div>
+</section>
+
+<!--==========-->
 
 <div id="gotop" class="gotop fa fa-arrow-up"></div>
 </div>
@@ -868,7 +879,28 @@
 <script src="js/jquery.fitvids.js"></script>
 <script src="js/gmap3.js"></script>
 <script src="js/fancySelect.js"></script>
+<script src="js/flipclock.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+
+    var now = new Date(); // 9:00 AM
+    now.setTime( now.getTime() - now.getTimezoneOffset()*30*1000 );
+
+    var end = new Date("Nov 11, 2014 23:59:59 GMT+01:00");
+
+    var diff = end - now;
+    if (diff > 0) {
+        diff = diff / 1000;
+        var clock = $('.your-clock').FlipClock(diff, {
+            clockFace: 'DailyCounter',
+            countdown: true
+// ... your options here
+        });
+
+    }
+
+</script>
 
 </body>
 </html>
