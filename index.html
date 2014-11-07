@@ -107,7 +107,7 @@
 <section id="schedule" class="clearfix row">
 
     <div class="clearfix text-center">
-<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FReadySteadyCode&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=847767105264072" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FReadySteadyCode&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=847767105264072" scrolling="no" frameborder="0" style="width: 130px;border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
 </div>
 <div class="clearfix text-center">
         <div id="countdown-container">
@@ -160,17 +160,8 @@
 </section>
 
 
-<div class="col-md-12 col-sm-12">
-    <h2>O natjecanju</h2>
-
-    <p>Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja
-        programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem
-        nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske
-        zajednice.</p>
-</div>
-
 <div class="row">
-    <div class="col-md-12 col-sm-12">
+    <div class="col-md-6 col-sm-12">
         <div class="content-tabs">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab1" data-toggle="tab">Prijave</a></li>
@@ -322,6 +313,17 @@
             </div>
         </div>
     </div>
+
+    <div class="col-md-6 col-sm-12">
+        <h2>O natjecanju</h2>
+
+        <p>Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja
+            programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem
+            nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske
+            zajednice.</p>
+    </div>
+
+
 </div>
 <section id="prizes" class="row">
     <div class="col-sm-12">
@@ -334,7 +336,7 @@
         <div class="pricing-table">
             <h3 class="table-title">Drugo mjesto</h3>
 
-            <div class="table-price">6.000,00 KN</div>
+            <div id="drugo-mjesto" class="table-price">6.000,00 KN</div>
             <ul class="table-features">
                 <li class="icon fa fa-trophy"></li>
 
@@ -345,7 +347,7 @@
         <div class="pricing-table">
             <h2 class="table-title">Prvo mjesto</h2>
 
-            <div class="table-price">10.000,00 KN</div>
+            <div id="prvo-mjesto" class="table-price">10.000,00 KN</div>
             <ul class="table-features">
                 <li class="icon fa fa-trophy"></li>
             </ul>
@@ -355,7 +357,7 @@
         <div class="pricing-table">
             <h3 class="table-title">Treće mjesto</h3>
 
-            <div class="table-price">4.000,00 KN</div>
+            <div id="trece-mjesto" class="table-price">4.000,00 KN</div>
             <ul class="table-features">
                 <li class="icon fa fa-trophy"></li>
 
@@ -616,12 +618,14 @@
     <div class="col-sm-12">
 
         <div class="col-sm-12">
-            <div class="col-sm-6">
+            <h2 class="hidden-md hidden-lg text-center">Organizatori i partneri</h2>
+
+            <div class="col-sm-6 visible-md visible-lg">
                 <div class="section-header text-center">
                     <h2>Organizatori</h2>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 visible-md visible-lg">
                 <div class="section-header text-center">
                     <h2>Partneri</h2>
                 </div>
@@ -657,7 +661,7 @@
                     </div>
 
                     <div class="col-sm-12">
-                        <textarea required id="contact-text" class="form-control" name="contact-text"></textarea>
+                        <textarea placeholder="Poruka" required id="contact-text" class="form-control" name="contact-text"></textarea>
                     </div>
                     <div class="col-sm-12 text-center">
                         <input type="submit" value="Pošalji" name="submit">
@@ -686,13 +690,13 @@
                     <p>
                         Prijavom na RSC natjecanje potvrđujete da se slažete s pravilima natjecanja.
                     </p>
-                    <a href="http://rsc.foi.hr/pravila.pdf" target="_blank" class="btn btn-lg btn-danger">Pravila
+                    <a href="http://rsc.foi.hr/pravila.pdf" target="_blank" class="pravila-btn btn btn-lg btn-danger">Pravila
                         natjecanja</a>
                 </div>
             </div>
             <section id="info" class="row">
                 <div class="col-sm-8">
-
+                    Podjeli:
                     <div class="addthis_sharing_toolbox"></div>
 
                 </div>

@@ -961,12 +961,12 @@ span.flip-clock-label {
 }
 
 .content {
-    background: #E7E7E7;
+    /*background: #E7E7E7;*/
 }
 
 .btn-danger {
     background-color: #ff1643;
-    height: 6rem;
+    /*height: 6rem;*/
     font-size: 2.5rem;
     color: #FFF;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
