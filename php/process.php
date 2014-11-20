@@ -1,5 +1,5 @@
 <?php
-
+exit;
     // Your Email Address
     $youremail = "rsc@foi.hr";
 
