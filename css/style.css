@@ -990,3 +990,10 @@ span.flip-clock-label {
     padding: 0 !important;
     margin: 0 !important;
 }
+
+
+#feed-iframe{
+    width: 100%;
+    border: none;
+    height:750px;
+}

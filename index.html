@@ -115,7 +115,7 @@
             <br />
 
             <div class="your-clock"></div>
-            <h3 class="">do početka natjecanja</h3>
+            <h3 class="">do kraja natjecanja</h3>
         </div>
     </div>
 
@@ -234,6 +234,18 @@
                         </li>
                         <li class="accordion">
                             <a class="accordion-heading">
+                                <time>22.11.2014. | 11:00</time>
+                                <h4 class="accordion-title">Stručna predavanja</h4>
+                                <span class="fa fa-plus-circle pull-right"></span>
+                            </a>
+
+                            <div class="accordion-body">
+                                11:00 - Predavanje iz domene<br/>
+                                11:10 - Predavanje iz područja UX/UI
+                            </div>
+                        </li>
+                        <li class="accordion">
+                            <a class="accordion-heading">
                                 <time>22.11.2014. | 14:00</time>
                                 <h4 class="accordion-title">Ručak</h4>
                                 <span class="fa fa-plus-circle pull-right"></span>
@@ -321,6 +333,22 @@
             programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem
             nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske
             zajednice.</p>
+        <p>
+            <h2>Timovi:</h2>
+            <ul>
+                <li>Algebra Team</li>
+                <li>Asyncro ALPHA</li>
+                <li>Asyncroβ</li>
+                <li>deveti bit</li>
+                <li>Floki</li>
+                <li>getName();</li>
+                <li>mastermind</li>
+                <li>noobs freestyle</li>
+                <li>NotFound</li>
+                <li>NullPointerExceptionists</li>
+                <li>Wrecking Ball</li>
+            </ul>
+        </p>
     </div>
 
 
@@ -740,8 +768,9 @@
     var now = new Date(); // 9:00 AM
     now.setTime(now.getTime());
 
-    //var end = new Date("Nov 11, 2014 23:59:59 GMT+01:00");
-    var end = new Date("Nov 22, 2014 08:00:00 GMT+01:00");
+    // var end = new Date("Nov 11, 2014 23:59:59 GMT+01:00");
+    // var end = new Date("Nov 22, 2014 08:00:00 GMT+01:00");
+    var end = new Date("Nov 23, 2014 10:00:00 GMT+01:00");
 
     var diff = end - now;
     if (diff > 0) {
