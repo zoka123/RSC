@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <title>RSC</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:title"
-          content="Ready, Steady, Code! - Studentsko natjecanje" />
-    <meta property="og:site_name" content="Ready, Steady, Code!" />
+          content="Ready, Steady, Code! - Studentsko natjecanje"/>
+    <meta property="og:site_name" content="Ready, Steady, Code!"/>
     <meta property="og:url"
-          content="http://rsc.foi.hr" />
+          content="http://rsc.foi.hr"/>
     <meta property="og:description" content="Ready, steady, code! je studentsko natjecanje u kojem sudionici pokazuju svoje znanje i vještine razvoja
         programskih proizvoda. Natjecanje traje intenzivnih 24 sata tokom kojih natjecatelji rješavaju zadani problem
         nakon čega svoje rješenje prezentiraju stručnom žiriju koji se sastoji od stručnjaka iz privrede i akademske
-        zajednice." />
+        zajednice."/>
     <meta property="og:image"
-          content="http://rsc.foi.hr/images/FB/fb_profile.png" />
-    <meta property="og:type" content="website" />
+          content="http://rsc.foi.hr/images/FB/fb_profile.png"/>
+    <meta property="og:type" content="website"/>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -45,14 +45,14 @@
     <div class="">
         <section id="schedule" class="clearfix col-sm-6">
 
-            <div class="clearfix text-center">
+            <div class="text-center">
                 <div id="countdown-container">
-                    <br />
-                    <br />
-                    <br />
+                    <br/>
+                    <br/>
+                    <br/>
 
                     <h3 class="">Još samo</h3>
-                    <br />
+                    <br/>
 
                     <div class="your-clock"></div>
                     <h3 class="">do kraja natjecanja</h3>
@@ -60,10 +60,10 @@
             </div>
         </section>
 
-        <section class="clearfix col-sm-6">
+        <section class="col-sm-6" style="margin-top:0px">
             <iframe name="feed-iframe" id="feed-iframe"
-                    src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FReadySteadyCode&width&height=750&colorscheme=light&show_faces=true&header=false&stream=true&show_border=false&appId=557565797709500"></iframe>
-
+                    src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FReadySteadyCode&amp;width&amp;height=750&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=557565797709500"
+                ></iframe>
         </section>
 
 
