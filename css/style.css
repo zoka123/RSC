@@ -991,9 +991,24 @@ span.flip-clock-label {
     margin: 0 !important;
 }
 
-
-#feed-iframe{
+#feed-iframe {
     width: 100%;
     border: none;
-    height:750px;
+    height: 750px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff1643;
+}
+
+.block img{
+    margin-bottom:10px;
+}
+
+#galerija{
+    height:400px;
+    overflow:hidden;
+    position: relative;
 }
